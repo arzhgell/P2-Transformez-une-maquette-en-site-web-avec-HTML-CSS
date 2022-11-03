@@ -6,6 +6,10 @@
   padding: 8px;
 }
 
+.p-l {
+  padding: 40px;
+}
+
 .px-xxxl {
   padding-right: 64px;
   padding-left: 64px;
@@ -14,3 +18,11 @@
 /**
 * MARGIN
 **/
+
+.mb-m {
+  margin-bottom: 32px;
+}
+
+.ml-xs {
+  margin-left: 16px;
+}

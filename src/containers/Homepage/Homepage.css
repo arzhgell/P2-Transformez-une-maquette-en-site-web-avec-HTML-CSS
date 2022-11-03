@@ -1,0 +1,29 @@
+.card-primary {
+  height: 199px;
+}
+
+.card-primary img {
+  height: 62%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-secondary {
+  height: 144px;
+}
+
+.card-secondary img {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-activity {
+  aspect-ratio: 2 / 3;
+}
+
+.card-activity img {
+  height: 87%;
+  width: 100%;
+  object-fit: cover;
+}

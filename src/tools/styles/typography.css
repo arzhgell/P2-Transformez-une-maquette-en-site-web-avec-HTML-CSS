@@ -15,6 +15,7 @@ h2 {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
+  margin: 4px 0;
 }
 
 h3 {
@@ -23,6 +24,7 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  margin: 4px 0;
 }
 
 h4 {
@@ -31,6 +33,7 @@ h4 {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  margin: 4px 0;
 }
 
 p {
@@ -39,4 +42,33 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  margin: 4px 0;
+}
+
+a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  margin: 6px 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.size-s {
+  font-size: 16px;
+}
+
+.size-m {
+  font-size: 18px;
+}
+
+.size-l {
+  font-size: 20px;
 }

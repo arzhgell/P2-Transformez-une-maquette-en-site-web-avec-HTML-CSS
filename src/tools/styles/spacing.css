@@ -6,8 +6,29 @@
   padding: 8px;
 }
 
+.p-s {
+  padding: 24px;
+}
+
 .p-l {
   padding: 40px;
+}
+
+.p-xl {
+  padding: 48px;
+}
+
+.pb-xxxl {
+  padding-bottom: 64px;
+}
+
+.pt-xl {
+  padding-top: 48px;
+}
+
+.px-xl {
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .px-xxxl {
@@ -19,10 +40,34 @@
 * MARGIN
 **/
 
+.mb-xs {
+  margin-bottom: 16px;
+}
+
 .mb-m {
   margin-bottom: 32px;
 }
 
 .ml-xs {
   margin-left: 16px;
+}
+
+.mt-xs {
+  margin-top: 16px;
+}
+
+.mt-s {
+  margin-top: 24px;
+}
+
+.mt-l {
+  margin-top: 40px;
+}
+
+.mt-xxxl {
+  margin-top: 64px;
+}
+
+.mt-auto {
+  align-self: flex-end;
 }

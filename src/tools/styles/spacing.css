@@ -1,0 +1,16 @@
+/**
+* PADDING
+**/
+
+.p-xxs {
+  padding: 8px;
+}
+
+.px-xxxl {
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+/**
+* MARGIN
+**/

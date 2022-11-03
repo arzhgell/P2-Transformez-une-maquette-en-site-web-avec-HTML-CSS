@@ -1,3 +1,18 @@
+.logo {
+  width: 61px;
+}
+
+nav button:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
+}
+
+.icon-circle {
+  height: 24px;
+  width: 24px;
+}
+
 .card-primary {
   height: 199px;
 }
@@ -26,4 +41,8 @@
   height: 87%;
   width: 100%;
   object-fit: cover;
+}
+
+.card-activity h4 {
+  height: 13%;
 }

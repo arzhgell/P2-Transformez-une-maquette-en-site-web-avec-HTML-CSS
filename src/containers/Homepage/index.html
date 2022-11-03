@@ -2,13 +2,13 @@
 <html lang="fr-FR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="../../tools/styles/global.css" />
-    <link rel="stylesheet" href="Homepage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/ae0defa13c.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../../tools/styles/global.css" />
+    <link rel="stylesheet" href="Homepage.css" />
     <title>Booki - Page d'accueil</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
       <section id="search">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre-ville ou en pleine nature</p>
-        <div class="d-flex col-5 col-md-6 mt-s">
+        <div class="d-flex col-5 col-md-6 col-sm-12 mt-s">
           <div
             class="background-grey p-xs br-small-left col-2 d-flex align-items-center justify-content-center border-grey border-solid border-small"
           >
@@ -39,37 +39,40 @@
           </div>
           <input
             value="Marseille, France"
-            class="col-6 p-xs border-small border-solid border-grey bold"
+            class="col-6 col-sm-10 p-xs border-small border-solid border-grey bold"
           />
           <button
-            class="col-5 border-none background-blue color-white br-small-right p-xs"
+            class="col-5 col-sm-2 border-none background-blue color-white br-small-right p-xs"
           >
-            Rechercher
+            <span class="hidden-sm">Rechercher</span>
+            <i
+              class="fa-solid fa-magnifying-glass color-white hidden-lg hidden-md fa-xl"
+            ></i>
           </button>
         </div>
-        <div class="d-flex align-items-center mt-m">
+        <div class="d-flex flex-sm-column mt-m">
           <h4 class="mr-m">Filtres</h4>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap">
             <button
-              class="bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
+              class="col-sm-6 bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-money-bill-wave color-blue mr-xxs"></i>
               Économique
             </button>
             <button
-              class="bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
+              class="col-sm-6 bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-person color-blue mr-xxs"></i>
               Familial
             </button>
             <button
-              class="bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
+              class="col-sm-6 bold mr-m background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-heart color-blue mr-xxs"></i>
               Romantique
             </button>
             <button
-              class="bold background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
+              class="col-sm-6 bold background-white border-solid border-medium border-grey br-large px-xs py-xxs d-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-dog color-blue"></i>
               Animaux autorisés
@@ -86,11 +89,13 @@
         </div>
       </section>
       <section id="offers" class="d-flex justify-content-between flex-wrap">
-        <div class="p-l col-8 col-md-12 background-grey br-large mt-m">
+        <div
+          class="p-l col-8 col-md-12 background-grey col-sm-12 br-large mt-m"
+        >
           <h2>Hébergements à Marseille</h2>
           <div class="d-flex flex-wrap justify-content-between mt-s">
             <div
-              class="card-primary background-white br-medium p-xxs col-4 mb-m shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -108,7 +113,7 @@
               </div>
             </div>
             <div
-              class="card-primary background-white br-medium p-xxs col-4 mb-m shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -126,7 +131,7 @@
               </div>
             </div>
             <div
-              class="card-primary background-white br-medium p-xxs col-4 mb-m shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -144,7 +149,7 @@
               </div>
             </div>
             <div
-              class="card-primary background-white br-medium p-xxs col-4 shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -164,7 +169,7 @@
               </div>
             </div>
             <div
-              class="card-primary background-white br-medium p-xxs col-4 shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -182,7 +187,7 @@
               </div>
             </div>
             <div
-              class="card-primary background-white br-medium p-xxs col-4 shadow-medium"
+              class="card-primary background-white br-medium p-xxs col-4 col-sm-12 shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -203,7 +208,7 @@
           <a href="" class="mt-l bold size-m">Afficher plus</a>
         </div>
         <div
-          class="p-l d-flex flex-column col-3 col-md-12 background-grey br-large mt-m"
+          class="p-l d-flex flex-column col-3 col-md-12 col-sm-12 background-grey br-large mt-m"
         >
           <div class="d-flex align-items-center justify-content-between">
             <h2>Les plus populaires</h2>
@@ -213,7 +218,7 @@
             class="d-flex flex-wrap justify-content-between align-items-center pt-m"
           >
             <div
-              class="card-secondary background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
+              class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -235,7 +240,7 @@
               </div>
             </div>
             <div
-              class="card-secondary background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
+              class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -257,7 +262,7 @@
               </div>
             </div>
             <div
-              class="card-secondary background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
+              class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -283,9 +288,11 @@
       </section>
       <section id="activities" class="mt-xxxl">
         <h2>Activités à Marseille</h2>
-        <div class="d-flex justify-content-between mt-xs">
+        <div
+          class="d-flex flex-wrap flex-sm-column justify-content-between align-items-center mt-xs"
+        >
           <div
-            class="card-activity background-white br-medium col-3 shadow-medium d-flex flex-column"
+            class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -295,7 +302,7 @@
             <h4 class="py-s px-xs">Vieux-port</h4>
           </div>
           <div
-            class="card-activity background-white br-medium col-3 shadow-medium d-flex flex-column"
+            class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -305,7 +312,7 @@
             <h4 class="py-s px-xs">Fort de Pomègues</h4>
           </div>
           <div
-            class="card-activity background-white br-medium col-3 shadow-medium d-flex flex-column"
+            class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -315,7 +322,7 @@
             <h4 class="py-s px-xs">Parc national des Calanques</h4>
           </div>
           <div
-            class="card-activity background-white br-medium col-3 shadow-medium d-flex flex-column"
+            class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -327,19 +334,21 @@
         </div>
       </section>
     </main>
-    <footer class="mt-xxxl background-grey d-flex p-xl justify-content-between">
-      <div class="d-flex flex-column col-4">
+    <footer
+      class="mt-xxxl background-grey d-flex flex-sm-column p-xl justify-content-between"
+    >
+      <div class="d-flex flex-column col-4 col-sm-12 mb-l">
         <h3 class="mb-xs">À propos</h3>
         <a href="">Fonctionnement du site</a>
         <a href="">Conditions générales</a>
         <a href="">Données et confidentialité</a>
       </div>
-      <div class="d-flex flex-column col-4">
+      <div class="d-flex flex-column col-4 col-sm-12 mb-l">
         <h3 class="mb-xs">Nos hébergements</h3>
         <a href="">Charte qualité</a>
         <a href="">Proposer votre hotêl</a>
       </div>
-      <div class="d-flex flex-column col-4">
+      <div class="d-flex flex-column col-4 col-sm-12 mb-l">
         <h3 class="mb-xs">Assistance</h3>
         <a href="">Centre d'aide</a>
         <a href="">Nous contacter</a>

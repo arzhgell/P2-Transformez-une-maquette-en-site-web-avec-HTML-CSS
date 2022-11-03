@@ -46,3 +46,17 @@ nav button:hover {
 .card-activity h4 {
   height: 13%;
 }
+
+@media (max-width: 767px) {
+  .card-activity {
+    height: 190px;
+  }
+
+  .card-activity img {
+    height: 60%;
+  }
+
+  .card-activity h4 {
+    height: 40%;
+  }
+}

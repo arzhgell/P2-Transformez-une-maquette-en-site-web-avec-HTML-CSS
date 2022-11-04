@@ -8,6 +8,10 @@ nav button:hover {
   padding-top: 46px;
 }
 
+.filter:hover {
+  background-color: #deebff;
+}
+
 .icon-circle {
   height: 24px;
   width: 24px;

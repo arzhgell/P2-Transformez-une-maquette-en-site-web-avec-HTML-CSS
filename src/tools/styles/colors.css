@@ -14,6 +14,12 @@
   background-color: #f2f2f2;
 }
 
+@media (max-width: 767px) {
+  .background-sm-white {
+    background-color: #ffffff;
+  }
+}
+
 /**
 * TEXT COLOR
 **/

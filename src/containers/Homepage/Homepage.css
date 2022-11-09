@@ -18,11 +18,11 @@ nav button:hover {
 }
 
 .card-primary {
-  height: 199px;
+  height: 200px;
 }
 
 .card-primary img {
-  height: 62%;
+  height: calc(100% - 110px);
   width: 100%;
   object-fit: cover;
 }
@@ -33,7 +33,8 @@ nav button:hover {
 
 .card-secondary img {
   height: 100%;
-  width: 40%;
+  width: calc(100% - 144px);
+  max-width: 40%;
   object-fit: cover;
 }
 
@@ -54,6 +55,7 @@ nav button:hover {
 @media (max-width: 767px) {
   .card-activity {
     height: 190px;
+    width: 100%;
   }
 
   .card-activity img {

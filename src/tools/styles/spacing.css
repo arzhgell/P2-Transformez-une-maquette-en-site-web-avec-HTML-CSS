@@ -74,9 +74,34 @@
   padding-left: 64px;
 }
 
+@media (max-width: 767px) {
+  .px-sm-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .p-sm-xs {
+    padding: 16px;
+  }
+}
+
 /**
 * MARGIN
 **/
+
+.my-xxs {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.my-xs {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.m-xxs {
+  margin: 8px;
+}
 
 .mb-xs {
   margin-bottom: 16px;
@@ -131,5 +156,5 @@
 }
 
 .mr-xxs {
-  margin-right: 16px;
+  margin-right: 8px;
 }

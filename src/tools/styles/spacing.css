@@ -83,6 +83,10 @@
   .p-sm-xs {
     padding: 16px;
   }
+
+  .pt-sm-m {
+    padding-top: 32px;
+  }
 }
 
 /**
@@ -157,4 +161,14 @@
 
 .mr-xxs {
   margin-right: 8px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .mt-sm-m {
+    margin-top: 32px;
+  }
 }

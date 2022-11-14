@@ -169,6 +169,13 @@
     flex-direction: column-reverse;
   }
 
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+  .align-items-sm-center {
+    align-items: center;
+  }
+
   .hidden-sm {
     display: none;
   }

@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script
       src="https://kit.fontawesome.com/ae0defa13c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../../tools/styles/global.css" />
-    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="../../tools/styles/global.css">
+    <link rel="stylesheet" href="Homepage.css">
     <title>Booki - Page d'accueil</title>
   </head>
   <body>
-    <header class="d-flex justify-content-between align-items-end px-xl">
+    <header
+      class="d-flex flex-sm-column justify-content-between align-items-end px-xl px-sm-0 justify-content-sm-center align-items-sm-center pt-sm-m"
+    >
       <img
         src="../../assets/images/logo/Booki.png"
         alt="Booki's logo"
         class="logo"
-      />
+     >
       <nav>
-        <button class="background-white px-s pt-xl border-none">
-          Hébergements
-        </button>
-        <button class="background-white px-s pt-xl border-none">
-          Activités
-        </button>
+        <a
+          href="#accommodations"
+          class="background-white m-0 text-center pt-xl px-s"
+          >Hébergements</a
+        >
+        <a
+          href="#activities"
+          class="background-white m-0 text-center pt-xl px-s"
+          >Activités</a
+        >
       </nav>
     </header>
-    <main class="mt-xxxl">
+    <main class="mt-xxxl mt-sm-m">
       <section id="search" class="px-xl p-sm-xs">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p class="mt-xs">En plein centre-ville ou en pleine nature</p>
-        <div class="d-flex col-6 col-md-6 col-sm-12 mt-s">
+        <form
+          class="d-flex col-6 col-md-6 col-sm-12 mt-s"
+          method="post"
+          id="searchForm"
+        >
           <div
             class="background-grey p-xs br-small-left col-2 d-flex align-items-center justify-content-center border-grey border-solid border-small"
           >
@@ -40,16 +50,18 @@
           <input
             value="Marseille, France"
             class="col-6 col-sm-9 p-xs border-small border-solid border-grey bold size-m"
-          />
+         >
           <button
             class="col-4 col-sm-3 border-none background-blue color-white br-small-right p-xs"
+            type="submit"
+            form="searchForm"
           >
             <span class="hidden-sm">Rechercher</span>
             <i
               class="fa-solid fa-magnifying-glass color-white hidden-lg hidden-md fa-xl"
             ></i>
           </button>
-        </div>
+        </form>
         <div class="d-flex flex-column mt-m">
           <h4 class="mr-m">Filtres</h4>
           <div class="d-flex flex-wrap">
@@ -88,25 +100,26 @@
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </section>
-      <section
-        id="offers"
+      <div
         class="d-flex justify-content-between flex-sm-reverse-column flex-wrap px-xl px-sm-0"
       >
-        <div
+        <section
+          id="offers"
           class="p-l p-sm-xs col-8 col-md-12 background-grey background-sm-white col-sm-12 br-large mt-m"
         >
           <h2>Hébergements à Marseille</h2>
           <div
             class="d-flex flex-wrap flex-sm-column justify-content-between mt-s"
           >
-            <div
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <h4>Auberge La Canebière</h4>
               <p>Nuit à partir de 25€</p>
               <div>
@@ -116,15 +129,16 @@
                 <i class="fa-solid fa-star color-blue"></i>
                 <i class="fa-solid fa-star color-grey"></i>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <h4>Hôtel du port</h4>
               <p>Nuit à partir de 52€</p>
               <div>
@@ -134,15 +148,16 @@
                 <i class="fa-solid fa-star color-blue"></i>
                 <i class="fa-solid fa-star color-grey"></i>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <h4>Hôtel Les mouettes</h4>
               <p>Nuit à partir de 76€</p>
               <div>
@@ -152,15 +167,16 @@
                 <i class="fa-solid fa-star color-blue"></i>
                 <i class="fa-solid fa-star color-grey"></i>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <div>
                 <h4>Hôtel de la mer</h4>
                 <p>Nuit à partir de 46€</p>
@@ -172,15 +188,16 @@
                   <i class="fa-solid fa-star color-grey"></i>
                 </div>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <h4>Auberge Le Panier</h4>
               <p>Nuit à partir de 23€</p>
               <div>
@@ -190,15 +207,16 @@
                 <i class="fa-solid fa-star color-blue"></i>
                 <i class="fa-solid fa-star color-grey"></i>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-primary background-white br-medium p-xxs col-4 col-sm-12 mb-m shadow-medium"
             >
               <img
                 src="../../assets/images/accommodations/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 class="br-medium-top"
                 alt="offer's illustration"
-              />
+             >
               <h4>Hôtel Chez Amina</h4>
               <p>Nuit à partir de 96€</p>
               <div>
@@ -208,11 +226,11 @@
                 <i class="fa-solid fa-star color-blue"></i>
                 <i class="fa-solid fa-star color-grey"></i>
               </div>
-            </div>
+            </a>
           </div>
           <a href="" class="mt-l bold size-m hidden-sm">Afficher plus</a>
-        </div>
-        <div
+        </section>
+        <aside
           class="p-l p-sm-xs d-flex flex-column col-3 col-md-12 col-sm-12 background-grey br-large mt-m br-sm-0"
         >
           <div class="d-flex align-items-center justify-content-between">
@@ -222,14 +240,15 @@
           <div
             class="d-flex flex-wrap justify-content-between align-items-center pt-m"
           >
-            <div
+            <a
+              href="#"
               class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 class="br-medium-left"
                 alt="offer's illustration"
-              />
+             >
               <div class="ml-xs d-flex flex-column justify-content-between">
                 <div>
                   <h4>Hôtel Le soleil du matin</h4>
@@ -243,15 +262,16 @@
                   <i class="fa-solid fa-star color-grey"></i>
                 </div>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 class="br-medium-left"
                 alt="offer's illustration"
-              />
+             >
               <div class="ml-xs d-flex flex-column justify-content-between">
                 <div>
                   <h4>Chambres d’hôtes Au cœur de l’eau</h4>
@@ -265,15 +285,16 @@
                   <i class="fa-solid fa-star color-grey"></i>
                 </div>
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="card-secondary mb-xs background-white br-medium p-xxs shadow-medium d-flex col-12 col-md-4"
             >
               <img
                 src="../../assets/images/accommodations/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 class="br-medium-left"
                 alt="offer's illustration"
-              />
+             >
               <div class="ml-xs d-flex flex-column justify-content-between">
                 <div>
                   <h4>Hôtel Bleu et Blanc</h4>
@@ -287,55 +308,59 @@
                   <i class="fa-solid fa-star color-grey"></i>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-        </div>
-      </section>
+        </aside>
+      </div>
       <section id="activities" class="mt-xxxl px-xl p-sm-xs">
         <h2>Activités à Marseille</h2>
         <div
           class="d-flex flex-wrap flex-sm-column justify-content-between align-items-center mt-xs col-sm-12"
         >
-          <div
+          <a
+            href="#"
             class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               class="br-medium-top"
               alt="offer's illustration"
-            />
+           >
             <h4 class="py-s px-xs">Vieux-port</h4>
-          </div>
-          <div
+          </a>
+          <a
+            href="#"
             class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               class="br-medium-top"
               alt="offer's illustration"
-            />
+           >
             <h4 class="py-s px-xs">Fort de Pomègues</h4>
-          </div>
-          <div
+          </a>
+          <a
+            href="#"
             class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               class="br-medium-top"
               alt="offer's illustration"
-            />
+           >
             <h4 class="py-s px-xs">Parc national des Calanques</h4>
-          </div>
-          <div
+          </a>
+          <a
+            href="#"
             class="card-activity mb-m background-white br-medium col-3 col-sm-12 shadow-medium d-flex flex-column"
           >
             <img
               src="../../assets/images/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               class="br-medium-top"
               alt="offer's illustration"
-            />
+           >
             <h4 class="py-s px-xs">Notre-Dame-de-la-Garde</h4>
-          </div>
+          </a>
         </div>
       </section>
     </main>
